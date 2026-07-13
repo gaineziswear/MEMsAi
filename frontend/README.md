@@ -22,7 +22,7 @@ Recommended Vercel settings:
 - Build command: `npm run vercel:build`
 - Output directory: `frontend/.next`
 
-The install script deliberately removes `.next`, package-manager cache, and framework cache directories before `npm ci` so the next Vercel deployment starts from a clean dependency and build cache state.
+The install script is defined in both the repository root and `frontend/package.json` so it works whether Vercel executes commands from the monorepo root or from the frontend project root. It deliberately removes `.next`, package-manager cache, and framework cache directories before `npm ci` so the next Vercel deployment starts from a clean dependency and build cache state.
 
 ## Validation
 
