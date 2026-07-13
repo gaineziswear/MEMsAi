@@ -12,14 +12,17 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2";
+    "font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500",
-    secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500",
+    primary:
+      "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 focus:ring-blue-500",
+    secondary:
+      "bg-slate-700 text-slate-100 hover:bg-slate-600 border border-slate-600 focus:ring-slate-500 shadow-sm",
     outline:
-      "border border-gray-300 text-gray-900 hover:bg-gray-50 focus:ring-gray-500",
-    ghost: "text-gray-700 hover:bg-gray-100 focus:ring-gray-500",
+      "border border-slate-600 text-slate-300 hover:bg-slate-800/50 hover:border-slate-500 focus:ring-slate-500 transition-colors",
+    ghost:
+      "text-slate-300 hover:text-white hover:bg-slate-800/50 focus:ring-slate-500 transition-colors",
   };
 
   const sizes = {
