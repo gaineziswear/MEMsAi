@@ -1,33 +1,49 @@
+"use client";
+
+import { Section } from "@/components/ui/Section";
+import { GlassPanel } from "@/components/ui/GlassPanel";
+import { Logo } from "@/components/brand/Logo";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 bg-white">
-      <div className="max-w-3xl text-center">
-
-        <h1 className="text-6xl font-bold tracking-tight">
-          MEMs<span className="text-blue-600">AI</span>
+    <main className="space-y-16">
+      {/* Header */}
+      <div className="text-center space-y-4 pt-8">
+        <Logo />
+        <h1 className="text-5xl md:text-6xl font-bold gradient-text mt-6">
+          Personal Intelligence Vault
         </h1>
-
-        <p className="mt-6 text-2xl text-gray-700">
-          Your Intelligence. Your Memory. Your Control.
+        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          Own your AI memory. Control your context. Build your intelligence.
         </p>
-
-        <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-          A secure, user-owned memory vault that allows people to control,
-          protect, and share their personal intelligence with authorized AI
-          assistants and trusted organisations.
-        </p>
-
-        <div className="mt-10 flex gap-4 justify-center">
-          <button className="rounded-xl bg-blue-600 px-8 py-3 text-white font-semibold">
-            Enter Your Vault
-          </button>
-
-          <button className="rounded-xl border border-gray-300 px-8 py-3 font-semibold">
-            Learn More
-          </button>
-        </div>
-
       </div>
+
+      {/* Features Section */}
+      <Section 
+        heading="Enterprise Features"
+        subheading="Built for serious intelligence work"
+      >
+        <div className="grid md:grid-cols-3 gap-6">
+          <GlassPanel>
+            <h3 className="text-lg font-semibold text-blue-400">Secure Vault</h3>
+            <p className="text-slate-400 mt-2">AES-256 encrypted personal memory storage</p>
+          </GlassPanel>
+          <GlassPanel>
+            <h3 className="text-lg font-semibold text-purple-400">AI Integration</h3>
+            <p className="text-slate-400 mt-2">Semantic search and intelligent retrieval</p>
+          </GlassPanel>
+          <GlassPanel>
+            <h3 className="text-lg font-semibold text-green-400">Full Control</h3>
+            <p className="text-slate-400 mt-2">Granular permissions and data ownership</p>
+          </GlassPanel>
+        </div>
+      </Section>
+
+      {/* Status */}
+      <GlassPanel className="text-center py-8">
+        <p className="text-slate-300">🚀 MEMsAI v0.1.0 - Foundation Phase</p>
+        <p className="text-slate-500 text-sm mt-2">Building the future of personal AI memory</p>
+      </GlassPanel>
     </main>
   );
 }
