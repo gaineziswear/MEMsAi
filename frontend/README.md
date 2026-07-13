@@ -18,9 +18,11 @@ The repository root includes `vercel.json` so Vercel can deploy the app from the
 Recommended Vercel settings:
 
 - Framework preset: Next.js
-- Install command: `cd frontend && npm ci`
-- Build command: `cd frontend && npm run build`
+- Install command: `npm run vercel:install`
+- Build command: `npm run vercel:build`
 - Output directory: `frontend/.next`
+
+The install script deliberately removes `.next`, package-manager cache, and framework cache directories before `npm ci` so the next Vercel deployment starts from a clean dependency and build cache state.
 
 ## Validation
 
@@ -29,4 +31,6 @@ Run these checks before deployment:
 ```bash
 npm run lint
 npm run build
+npm run vercel:install
+npm run vercel:build
 ```

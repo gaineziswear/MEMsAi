@@ -1,0 +1,13 @@
+{
+  "name": "memsai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "lint": "npm --prefix frontend run lint",
+    "vercel:install": "rm -rf frontend/.next frontend/node_modules/.cache /tmp/memsai-vercel-npm-cache && npm --prefix frontend ci --cache /tmp/memsai-vercel-npm-cache --prefer-online --force",
+    "vercel:build": "npm --prefix frontend run build"
+  }
+}
