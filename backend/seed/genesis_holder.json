@@ -1,0 +1,155 @@
+{
+  "holder_id": "GENESIS-HOLDER-001",
+  "profile_type": "primary_user",
+  "preferred_name": "Ian",
+  "identity": {
+    "preferred_name": "Ian",
+    "communication_preferences": {
+      "default_language": "English",
+      "secondary_languages": [
+        "French",
+        "Mauritian Creole when requested"
+      ],
+      "response_style": [
+        "structured",
+        "practical",
+        "detailed reasoning",
+        "strategic thinking"
+      ]
+    }
+  },
+  "core_traits": {
+    "thinking_style": [
+      "entrepreneurial",
+      "systems-oriented",
+      "innovation-focused",
+      "prefers iterative collaboration"
+    ],
+    "decision_preferences": [
+      "likes evidence-based analysis",
+      "values historical context",
+      "prefers understanding the why behind decisions",
+      "prefers practical implementation plans"
+    ]
+  },
+  "professional_intelligence": {
+    "background": {
+      "industry_experience": [
+        "hospitality",
+        "operations management",
+        "large-scale food production",
+        "business operations"
+      ],
+      "skills": [
+        "team leadership",
+        "process improvement",
+        "multi-site operations",
+        "business strategy"
+      ]
+    }
+  },
+  "technology_profile": {
+    "primary_interests": [
+      "Artificial Intelligence",
+      "AGI",
+      "Machine Learning",
+      "Web3",
+      "Blockchain",
+      "Cloud infrastructure",
+      "Software architecture"
+    ],
+    "active_projects": [
+      {
+        "name": "MEMsAI",
+        "purpose": "User-owned AI memory platform",
+        "focus": [
+          "personal intelligence vault",
+          "AI memory ownership",
+          "secure context management"
+        ]
+      },
+      {
+        "name": "HNPE",
+        "purpose": "Hypergraph Neural Prediction Engine",
+        "focus": [
+          "AI prediction systems",
+          "advanced machine learning concepts",
+          "financial intelligence"
+        ]
+      },
+      {
+        "name": "AI Trading Systems",
+        "purpose": "Automated trading intelligence",
+        "focus": [
+          "market prediction",
+          "technical analysis",
+          "sentiment analysis",
+          "automated intelligence"
+        ]
+      },
+      {
+        "name": "ScubAIDive",
+        "purpose": "AI ecosystem discovery platform",
+        "focus": [
+          "AI ecosystem discovery",
+          "startup intelligence"
+        ]
+      }
+    ]
+  },
+  "development_environment": {
+    "preferred_tools": [
+      "GitHub",
+      "GitHub Codespaces",
+      "Next.js",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "frontend_preferences": {
+      "style": [
+        "enterprise-grade",
+        "modern",
+        "human-centred",
+        "premium AI aesthetic"
+      ]
+    }
+  },
+  "knowledge_domains": {
+    "strong_interest": [
+      "AI architecture",
+      "technology strategy",
+      "business models",
+      "finance",
+      "trading systems",
+      "innovation"
+    ]
+  },
+  "interaction_model": {
+    "preferred_ai_role": [
+      "technical advisor",
+      "strategic partner",
+      "architecture reviewer",
+      "research assistant"
+    ],
+    "preferred_workflow": [
+      "define strategy",
+      "create architecture",
+      "implement milestone by milestone",
+      "review and improve"
+    ]
+  },
+  "personal_context": {
+    "important_relationships": [
+      "spouse",
+      "family responsibilities"
+    ],
+    "privacy_level": "high"
+  },
+  "vault_permissions": {
+    "owner": true,
+    "data_control": "full",
+    "sharing_default": "private",
+    "external_ai_access": "requires_permission"
+  }
+}
