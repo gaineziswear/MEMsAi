@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "vercel:install": "rm -rf .next node_modules/.cache /tmp/memsai-vercel-npm-cache && npm ci --cache /tmp/memsai-vercel-npm-cache --prefer-online --force",
+    "vercel:build": "npm run build"
   },
   "dependencies": {
     "next": "16.2.10",

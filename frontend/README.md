@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MEMsAI Frontend
 
-## Getting Started
+Next.js 16 App Router application for the MEMsAI platform.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open <http://localhost:3000>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The repository root includes `vercel.json` so Vercel can deploy the app from the `frontend/` workspace while keeping the monorepo layout intact.
 
-## Learn More
+Recommended Vercel settings:
 
-To learn more about Next.js, take a look at the following resources:
+- Framework preset: Next.js
+- Install command: `npm run vercel:install`
+- Build command: `npm run vercel:build`
+- Output directory: `frontend/.next`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The install script is defined in both the repository root and `frontend/package.json` so it works whether Vercel executes commands from the monorepo root or from the frontend project root. It deliberately removes `.next`, package-manager cache, and framework cache directories before `npm ci` so the next Vercel deployment starts from a clean dependency and build cache state.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Validation
 
-## Deploy on Vercel
+Run these checks before deployment:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+npm run build
+npm run vercel:install
+npm run vercel:build
+```

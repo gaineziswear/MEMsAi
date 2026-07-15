@@ -1,0 +1,14 @@
+# Keep deployments small and deterministic.
+.git
+.github
+.next
+node_modules
+frontend/.next
+frontend/node_modules
+backend/venv
+backend/__pycache__
+**/__pycache__
+**/*.pyc
+.env
+.env.*
+npm-debug.log*
