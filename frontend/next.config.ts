@@ -1,15 +1,9 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  typescript: {
-    tsconfigPath: "./tsconfig.json",
-  },
-  eslint: {
-    dirs: ["app", "components", "lib", "types"],
-  },
-  experimental: {
-    reactCompiler: true,
-  },
+  reactCompiler: true, // Now at the root level
+  
+  // Any other valid root-level options...
 };
 
 export default nextConfig;
